@@ -1,0 +1,36 @@
+body {
+	color: #666699;
+	background-color: #7caedb;
+	
+}
+
+a{
+	color: white;
+	
+}
+
+a:hover{
+		color: #808080;
+}
+
+a:link, a:visited {
+		background-color: #003366;
+		  color: white;
+		  padding: 14px 25px;
+		  text-align: center; 
+		  text-decoration: none;
+		  display: inline-block;
+}
+
+h1{
+		font-family: 'arial', sans-serif, times new roman;
+		color: #2b2104;
+}
+
+h2{
+		color: #990099;
+}
+
+hr{
+	border-color: #990099;
+}

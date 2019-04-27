@@ -1,0 +1,37 @@
+<html>
+	<!--
+		This page will demonstrate using JavaScript in HTML
+		Author: Dr. Arrington
+		Date: 	3/30/19
+		File:	GuessingGame.html
+	-->
+	<head>
+		<title>Number Guessing Game </title>
+		<link rel="stylesheet" type = "text/css" href="CSS/guessingGame.css">
+	</head>
+	<body>
+		<img src = "Images/guessingGame.PNG" title="Guess a number between 1 and 10">
+		<h1>Can you guess the Number?</h1>
+		
+		<p>We have selected a random number between 1 and 100.</p>
+		<p>See if you can guess the number in 10 tries or less.</p>
+		<p>We will tell you if your guess is too high or too low.</p>
+		
+		<h2>GOOD LUCK!</h2>
+		
+		<div class = "form">
+			<label for = "guessField">Enter a number: </label>
+			<input type = "text" id = "guessField" class = "guessField"> <br><br>
+			<input type = "submit" value="Submit Guess" class = "guessSubmit">
+		</div>
+		
+		<div class = "resultParas">
+			<p class = "guesses"> </p>
+			<p class = "lastResult"> </p>
+			<p class = "lowOrHi"> </p>
+		</div>
+		
+		<script src = "JS/guessingGame.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+	
+	<head>
+		<title>Text and Button Animation Demo</title>
+			<style>
+			@keyframes bounceIn{
+				0%{
+					transform:scale(0.1);
+					color:blue:
+					opacity:0;
+				}
+				70%{
+					transform:scale(1.4);
+					color:red;
+					opacity:1;
+				}
+				100%{
+				transform:scale(1);
+				color:green;
+				}
+			}		
+			@keyframes bounceOut{
+				0%{
+					transform:scale(1);
+					color:orange:
+				}
+				25%{
+					transform:scale(1.7);
+					color:purple;
+				}
+				50%{
+					transform:scale(1);
+					color:lime;
+					opacity:0.5;
+				}
+				75%{
+					transform:scale(1.4);
+					color:red;
+					opacity:1;
+				}
+				100%{
+				transform:scale(0.1);
+				color:yellow;
+				}
+			}		
+				.animate{
+					text-align:center;
+					animation-iteraion-count:infinite;
+					animation-name:bounceIn;
+					animation-play-state:running;
+					animation-duration:30s;
+					animation-timing-function:ease-out;
+					animation-delay: 2s;
+					animation-direction:reverse;
+				}
+				.animate:hover{
+					animation-play-state:paused;
+				}
+				.animate2{
+					text-align:center;
+					animation-iteraion-count:infinite;
+					animation-name:bounceOut;
+					animation-play-state:running;
+					animation-duration:10s;
+					animation-timing-function:ease-out;
+					animation-delay: 1s;
+					animation-direction:alternate;
+				}
+				.animate2:hover{
+					animation-play-state:paused;
+				}
+				.button{
+					background-color:#146d37;
+					transition-property:background-color;
+					transition-duration:1s;
+					transition-timign-function:ease-out;
+					transition-delay:0.2s;
+					
+				}
+				.button:hover{
+					background-color:#60b946;
+				}
+					
+			</style>
+	</head>
+	
+	<body>
+		<h1 class="animate">Animation Sample</h1>
+		<p class="animate2">Dr. Arrington has no idea what he is doing!!</p>
+		<p class="animate">But this still looks pretty cool!!</p>
+		<h2 class="animate2">Animation Sample part 2</h2>
+		<p class="animate">Dr. Arrington has no idea what he is doing!!</p>
+		<p class="animate2">But this still looks pretty cool!!</p>
+		<div align="right">
+			<button type="button"  class="button" id="pressed">
+				Click Me!!
+			</button>
+			<button type="button"  class="button" id="pressed2">
+				Or Click Me!!
+			</button>
+		</div>
+		<script src="button.js"></script>
+	</body>
+</html>
